@@ -1,0 +1,26 @@
+<div class="col s12 m6 l4 xl3">
+  <div class="card" appHover>
+    <div class="card-image">
+      <img src="{{ user.image }}">
+      <span
+        class="card-title"
+        [ngClass]="{'marked': isMarked}"
+      >
+        {{ user.name | uppercase }}
+      </span>
+    </div>
+    <div class="card-content">
+      <p>{{ user.geo }}</p>
+    </div>
+    <div class="card-action">
+      <a
+        (click)="likeUser()"
+        class="waves-effect waves-light btn"
+      >Like</a>
+      <a
+        (click)="unLikeUser()"
+        class="waves-effect waves-light btn"
+      >unlike</a>
+    </div>
+  </div>
+</div>
