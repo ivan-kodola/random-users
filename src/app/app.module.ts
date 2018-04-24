@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { SearchPipe } from './search.pipe';
 import { HomePageComponent } from './home-page/home-page.component';
 import { SettingPageComponent } from './setting-page/setting-page.component';
+import { AppRoutingModule } from './app.routing';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { SettingPageComponent } from './setting-page/setting-page.component';
     BrowserModule,
     HttpClientModule,
     FormsModule,
-    RouterModule
+    RouterModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

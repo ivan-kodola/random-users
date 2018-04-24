@@ -18,8 +18,8 @@ export class UsersService {
             name: user.name.first + ' ' + user.name.last,
             image: user.picture.large,
             geo: user.location.city + ' ' + user.location.state + ' ' + user.location.street
-          }
-        })
+          };
+        });
       });
   }
 
