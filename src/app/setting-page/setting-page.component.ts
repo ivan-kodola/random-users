@@ -7,7 +7,7 @@ import { UsersService } from '../users.service';
   styleUrls: ['./setting-page.component.scss']
 })
 export class SettingPageComponent implements OnInit {
-  number;
+  number: number;
 
   constructor(private userService: UsersService) { }
 

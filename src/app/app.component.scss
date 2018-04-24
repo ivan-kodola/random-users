@@ -1,6 +1,11 @@
 .nav-wrapper {
   max-width: 1300px;
   margin: 0 auto;
+
+  .active {
+    color: aqua;
+    text-decoration: underline;
+  }
 }
 
 .container {
