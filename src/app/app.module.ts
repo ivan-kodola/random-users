@@ -11,6 +11,7 @@ import { SearchPipe } from './search.pipe';
 import { HomePageComponent } from './home-page/home-page.component';
 import { SettingPageComponent } from './setting-page/setting-page.component';
 import { AppRoutingModule } from './app.routing';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { AppRoutingModule } from './app.routing';
     HoverDirective,
     SearchPipe,
     HomePageComponent,
-    SettingPageComponent
+    SettingPageComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {UsersService} from '../users.service';
+import { UsersService } from '../users.service';
 
 @Component({
   selector: 'app-setting-page',
@@ -9,14 +9,14 @@ import {UsersService} from '../users.service';
 export class SettingPageComponent implements OnInit {
   number;
 
-  constructor(private userSevice: UsersService) { }
+  constructor(private userService: UsersService) { }
 
   ngOnInit() {
-    this.number = this.userSevice.number;
+    this.number = this.userService.number;
   }
 
   onChange() {
-    this.userSevice.setNumber(+this.number);
+    this.userService.setNumber(+this.number);
   }
 
 }
