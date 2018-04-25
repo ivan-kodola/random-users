@@ -12,6 +12,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { SettingPageComponent } from './setting-page/setting-page.component';
 import { AppRoutingModule } from './app.routing';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { UsersService } from './users.service';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
     RouterModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [UsersService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
