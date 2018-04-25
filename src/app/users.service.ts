@@ -7,7 +7,7 @@ import { Observable } from 'rxjs/Observable';
 export class UsersService {
   number = 8;
 
-  constructor(private  http: HttpClient) {}
+  constructor(private http: HttpClient) {}
 
   getUsers(): Observable<any> {
     return this.http.get('https://randomuser.me/api/?inc=gender,name,picture,location&results=' + this.number + '&nat=gb')
